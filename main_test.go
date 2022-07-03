@@ -1,7 +1,7 @@
 package main_test
 
 import (
-	. "skillFactory/multithreading/practice"
+	. "skillFactory/multithreading/practice16.6.2"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
