@@ -86,9 +86,12 @@ func (c *Client) Withdraw() {
 // Функция пополняет баланс пользователя на
 // amount денег
 func (c *Client) Deposit(amount int) {
-	c.Mu.Lock()
-	c.AccountBalance += amount
-	c.Mu.Unlock()
+	if amount > 0 {
+
+		c.Mu.Lock()
+		c.AccountBalance += amount
+		c.Mu.Unlock()
+	}
 
 }
 
